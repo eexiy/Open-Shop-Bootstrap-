@@ -1,0 +1,521 @@
+@import 'fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --noto-light: 'NotoSans-Light';
+    --noto-semibold: 'NotoSans-SemiBold';
+    --noto-regular: 'NotoSans-Regular';
+    --noto-medium: 'NotoSans-Medium';
+    --light_mode: #FFFFFF;
+    --dark_mode: ##313131;
+    --black: #313131;
+    --white: #FFFFFF;
+}
+
+
+body {
+    background: var(--light_mode);
+}
+
+
+/* Header Start */
+
+.header {
+    margin-bottom: 86px;
+}
+
+.header__nav-list {
+    background: var(--black);
+}
+
+.nav-link,
+.nav-link:hover {
+    color: var(--white) !important;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    font-family: var(--noto-regular);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header__nav-tel::before {
+    content: '\f879';
+}
+
+.header__nav-sign::before {
+    content: '\f007';
+}
+
+.header__nav-cart::before {
+    content: '\f07a';
+}
+
+.nav-item:nth-of-type(1) {
+    margin-right: 80px;
+}
+
+.nav-item:nth-of-type(2) {
+    margin-right: 32px;
+}
+
+.nav-item:nth-of-type(3) {
+    margin-right: 42px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-form {
+    outline: none;
+    width: 630px;
+}
+
+.header__nav-form,
+placeholder {
+    padding: 16px 0 16px 10px;
+    color: #BBBBBB;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: var(--noto-regular);
+}
+
+.header__nav-search {
+    position: relative;
+}
+
+.header__nav-btn,
+.header__nav-btn:hover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 16px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: var(--noto-regular);
+}
+
+.header__search-btn::before {
+    content: '\f002';
+    font-size: 16px;
+    color: var(--white);
+    margin-right: 8px;
+}
+
+.hader__nav-logo {
+    margin-right: 143px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background: #ABABAB;
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background: var(--primary_color);
+    width: 15px;
+    height: 15px;
+    background: var(--black);
+}
+
+.header__content-title {
+    max-width: 624px;
+    width: 100%;
+    font-size: 48px;
+    line-height: 70px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-family: var(--noto-semibold);
+    margin-bottom: 121px;
+    color: var(--black);
+}
+
+.header__content-link,
+.header__content-link:hover {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    font-family: var(--noto-regular);
+    color: var(--white);
+    background: var(--black);
+    text-decoration: none;
+    padding: 13px 46px;
+}
+
+
+/* Header End */
+
+/* Main Start */
+
+
+.main__watch-img,
+.main__airpods-img,
+.main__powerbank-img,
+.main__bank-img {
+    background: #F9F9F9;
+
+}
+
+.main__content-top,
+.main__content-top {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 20px;
+    line-height: 70px;
+    letter-spacing: 0.05em;
+    color: var(--white);
+    font-family: var(--noto-regular);
+    background: var(--black);
+    padding: 4px 12px;
+    border-radius: 50%;
+}
+
+
+.main__watch-title {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: var(--black);
+    font-family: var(--noto-medium);
+}
+
+.main__watch-price,
+.main__airpods-price,
+.main__powerbank-price,
+.main__bank-price {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: var(--black);
+    font-family: var(--noto-light);
+}
+
+.main__watch-names {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    margin-bottom: 5px;
+}
+
+.main__airpods-names {
+    position: absolute;
+    bottom: 270px;
+    left: 20px;
+}
+
+.main__powerbank-names {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.main__bank-names {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.main__content-powerbank {
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.main__content-bank {
+    margin-top: 25px;
+}
+
+.main__bank-img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main__content-bottom,
+.main__content-bottom {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-size: 20px;
+    line-height: 70px;
+    letter-spacing: 0.05em;
+    color: var(--white);
+    font-family: var(--noto-regular);
+    background: var(--black);
+    padding: 4px 12px;
+    border-radius: 50%;
+}
+
+.learn__more-btn,
+.learn__more-btn:hover {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    font-family: var(--noto-regular);
+    color: var(--white);
+    background: var(--black);
+    text-decoration: none;
+    padding: 12px 28px;
+    max-width: 196px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main__discounts-btn,
+.main__discounts-btn:hover {
+    margin-top: 30px;
+    margin-top: 70px;
+}
+
+
+.main__card-title {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--black);
+    font-family: var(--noto-medium);
+
+}
+
+.main__content-cards {
+    margin-top: 30px;
+}
+
+.main__card-descr {
+    position: absolute;
+    bottom: 0;
+    left: 26px;
+    text-align: center;
+
+}
+
+
+.main__content-buy,
+.main__content-buy:hover {
+    position: absolute;
+    bottom: -30px;
+    left: 98px;
+    background: var(--black);
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    font-family: var(--noto-regular);
+    color: var(--white);
+    padding: 6px 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0;
+    transition: .3s;
+}
+
+.main__content-card:hover {
+    background: var(--white);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main__content-buy:hover {
+    opacity: 1;
+}
+
+.main__card-price {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--black);
+    font-family: var(--noto-light);
+}
+
+.main__cards-btn,
+.main__cards-btn:hover {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.main__ps5-title {
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--black);
+    font-family: var(--noto-semibold);
+    margin: 20px 0 70px 0;
+}
+
+.main__ps5-btn {
+    margin: 0;
+}
+
+
+/* Main End */
+
+
+/* Footer Start */
+
+.footer {
+    background: var(--black);
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 143px;
+}
+
+.footer__nav-form {
+    outline: none;
+    width: 520px;
+}
+
+.footer__nav-form {
+    padding: 16px 0 16px 10px;
+    color: #BBBBBB;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: var(--noto-regular);
+}
+
+.footer__nav-search {
+    position: relative;
+
+}
+
+
+.footer__nav-btn,
+.footer__nav-btn:hover {
+    position: absolute;
+    right: 0;
+    top: 41px;
+    background: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 59px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: var(--noto-regular);
+    border: 1px solid var(--white);
+
+}
+
+.footer__nav-text {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white);
+    font-family: var(--noto-regular);
+}
+
+.footer__social-networks a {
+    text-decoration: none;
+}
+
+.footer__social-networks {
+    margin-bottom: 65px;
+}
+
+
+.telegram::after {
+    content: "\f3fe";
+    color: var(--white);
+    font-size: 42px;
+    text-decoration: none;
+    margin-left: 55px;
+}
+
+.instagram::after {
+    content: "\f16d";
+    color: var(--white);
+    font-size: 42px;
+    text-decoration: none;
+    margin: 0 24px 0 24px;
+}
+
+.facebook::after {
+    content: "\f09a";
+    color: var(--white);
+    font-size: 42px;
+    text-decoration: none;
+}
+
+.footer__nav-link,
+.footer__nav-link:hover {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--white);
+    font-family: var(--noto-regular);
+    text-decoration: none;
+}
+
+.footer__nav {
+    margin-left: 20px;
+    column-gap: 30px;
+}
+
+
+/* Footer End */
+
+
+
+/* Phones Start */
+
+
+.main__ps5 {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.main__xBox-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main__xBox-title {
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--black);
+    font-family: var(--noto-semibold);
+}
+
+.main__xBox-descr {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    font-family: var(--noto-regular);
+    color: var(--black);
+    max-width: 454px;
+    width: 100%;
+}
+
+.main__ps5-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+
+
+/* Phones End */
+
+
+/* Buy Start  */
+
+
+
+/* Buy End */
